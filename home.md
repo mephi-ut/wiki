@@ -4,3 +4,4 @@ To clone this wiki:
 ```
 git clone https://devel.mephi.ru/ut/wiki
 ```
+[Go to https://devel.mephi.ru/ut/wiki](https://devel.mephi.ru/ut/wiki)
