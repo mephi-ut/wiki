@@ -1,6 +1,9 @@
 To define a separate profile for some program in a container you may use "cx"
 ```
 /path/to/program cx,
+profile /path/to/program {
+    …
+}
 ```
 see details here: http://wiki.apparmor.net/index.php/QuickProfileLanguage#File_permissions
 
