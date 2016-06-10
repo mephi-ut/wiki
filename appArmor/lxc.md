@@ -2,6 +2,7 @@ To define a separate profile for some program in a container you may use "cx"
 ```
 /path/to/program cx,
 ```
+see details here: http://wiki.apparmor.net/index.php/QuickProfileLanguage#File_permissions
 
 To forbid a way to see "dmesg" via "/proc/kmsg" you may add rule:
 ```
