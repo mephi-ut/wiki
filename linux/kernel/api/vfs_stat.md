@@ -8,7 +8,7 @@ vfs_stat ( char *path, struct kstat *kstat )
 
 `vfs_stat()` — retrieve information about the file pointed to by `path`.
 
-About `struct kstat` see [https://docs.oracle.com/cd/E53394_01/html/E54769/kstat-3kstat.html](https://docs.oracle.com/cd/E53394_01/html/E54769/kstat-3kstat.html) and file linux-source/include/linux/stat.h:
+About `struct kstat` see file linux-source/include/linux/stat.h:
 ```
 #include <asm/stat.h>
 #include <uapi/linux/stat.h>
