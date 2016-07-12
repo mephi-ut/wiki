@@ -6,7 +6,7 @@ I don't know if this correct or not, but:
 vfs_stat ( char *path, struct kstat *kstat )
 ```
 
-`vfs_stat()` — retrieve information about the file pointed to by `path`.
+`vfs_stat()` — retrieve information about the file pointed to by `path`. Read `man 2 stat`.
 
 About `struct kstat` see file linux-source/include/linux/stat.h:
 ```
