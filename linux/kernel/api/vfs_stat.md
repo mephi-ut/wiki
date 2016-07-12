@@ -1,10 +1,14 @@
 I don't know if this correct or not, but here a manpage ugly draft:
 
+#### SYNOPSIS
+
 ```
 #include <linux/uaccess.h>
 
 vfs_stat ( char *path, struct kstat *kstat )
 ```
+
+#### DESCRIPTION
 
 `vfs_stat()` — retrieve information about the file pointed to by `path`. Read `man 2 stat`.
 
@@ -45,6 +49,8 @@ struct kstat {
 
 Function source code: http://lxr.linux.no/linux+v4.6.4/fs/stat.c#L121
 
+#### EXAMPLES
+
 A wrapper example:
 
 ```
@@ -79,3 +85,7 @@ static int __init my_module_init()
 
 module_init ( my_module_init )
 ```
+
+#### RETURN VALUE
+
+On success, `vfs_stat()` return zero; otherwise non-zero.
