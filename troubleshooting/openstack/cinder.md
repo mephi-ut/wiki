@@ -7,13 +7,19 @@
 
 Решение:
 - Ensure that the cinder configuration folder is owned by the 'cinder' group:
+
 ```
 chown root:cinder /etc/cinder
 ```
+
 - Modify the apache configuration and ensure that the process is executed using the 'cinder' group.
+
 ```
 WSGIDaemonProcess cinder-wsgi processes=5 threads=1 user=cinder group=cinder display-name=%{GROUP}
 ```
+
 - Restart Apache:
+
 ```
 service apache2 restart
+```
