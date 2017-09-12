@@ -6,20 +6,23 @@
 Проблема в правах, с которыми запускается cinder-wsgi.
 
 Решение:
-- Ensure that the cinder configuration folder is owned by the 'cinder' group:
+- Проверить, что директория с конфигурационными файлами cinder'а принадлежить группе 'cinder'. Если это не так, то выполнить команду:
 
 ```
 chown root:cinder /etc/cinder
 ```
 
-- Modify the apache configuration and ensure that the process is executed using the 'cinder' group.
+- Изменить в конфигурационном файле /etc/apache2/conf-available/cinder-wsgi.conf строку запуска. Добавить `group=cinder`
 
 ```
 WSGIDaemonProcess cinder-wsgi processes=5 threads=1 user=cinder group=cinder display-name=%{GROUP}
 ```
 
-- Restart Apache:
+- Перезапустить Apache:
 
 ```
 service apache2 restart
 ```
+
+Спасибо Christoph Fiehe с Launchpad'а.
+Ссылка на баг: https://bugs.launchpad.net/cinder/+bug/1715024
