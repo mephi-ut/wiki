@@ -7,6 +7,7 @@
 1. Установить и запустить [WinSCP](https://winscp.net/eng/download.php)
 
 2. Нажать на кнопку «Advanced».
+
  ![screenshot1](winscp/winscp_1.png)
 
 3. Нажать подраздел «Tunnel» в разделе «Connection», ввести следующие значения:
@@ -31,6 +32,6 @@
 
 5. Нажать «Save As…» и «ОК»
 
- ![screenshot1](winscp/winscp_4.png)\
+ ![screenshot1](winscp/winscp_4.png)
 
 6. Нажать «Login»
