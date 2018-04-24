@@ -14,7 +14,6 @@ deny /proc/kmsg rw,
 
 result profile:
 ```
-cat >/etc/apparmor.d/lxc/lxc-someName <<EOF
 profile lxc-container-someName flags=(attach_disconnected,mediate_deleted) {
         #include <abstractions/lxc/container-base>
 
@@ -83,7 +82,6 @@ profile lxc-container-someName flags=(attach_disconnected,mediate_deleted) {
                 /etc/modules.conf r,
         }
 }
-EOF
 ```
 
 To enable this profile for a container:
