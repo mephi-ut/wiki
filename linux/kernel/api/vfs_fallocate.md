@@ -1,15 +1,10 @@
-I don't know if this correct or not, but here a manpage ugly draft:
+I don't know if this correct or not, but:
 
-#### SYNOPSIS
 ```
-int vfs_fallocate ( struct file *file, int mode, off_t offset, off_t len )
+vfs_fallocate ( struct file *file, int mode, off_t offset, off_t len )
 ```
-
-#### DESCRIPTION
 
 Read `man 2 fallocate`.
-
-#### EXAMPLES
 
 A wrapper example:
 ```
@@ -27,7 +22,3 @@ int file_allocate ( struct file *file, int mode, off_t offset, off_t len )
   return error;
 }
 ```
-
-#### RETURN VALUE
-
-On success, `vfs_allocate()` resturns zero, otherwise non-zero.
